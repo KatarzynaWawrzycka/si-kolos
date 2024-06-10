@@ -18,6 +18,9 @@ class Author
     private ?string $firstName = null;
 
     #[ORM\Column(length: 128)]
+    private ?string $middleName = null;
+
+    #[ORM\Column(length: 128)]
     private ?string $lastName = null;
 
     public function getId(): ?int
